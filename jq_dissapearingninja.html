@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Dissapearing Ninja!</title>
+</head>
+<body>
+    <div id="wrapper">
+        <img src="images/randophoto.jpg">
+        <img src="images/randophoto.jpg">
+        <img src="images/randophoto.jpg">
+        <img src="images/randophoto.jpg">
+        <img src="images/randophoto.jpg">
+        <img src="images/randophoto.jpg">
+        <img src="images/randophoto.jpg">
+        <img src="images/randophoto.jpg">
+        <img src="images/randophoto.jpg">
+        <button id="revert">Revert all!</button>
+    </div>
+    
+    <script>
+
+        $(document).ready( function () {
+            $("img").click(function () {
+                $(this).css("display","none");
+            })
+
+            $("#revert").click(function () {
+                $("img").css("display", "inline-block");
+            })
+
+
+        })
+
+    </script>
+</body>
+</html>
